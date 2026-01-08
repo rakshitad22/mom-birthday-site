@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Mom!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>🎂 Happy Birthday, Mom! 🎉</h1>
+    <p class="subtitle">You make the world softer, brighter, and kinder—today is all yours.</p>
+    <div class="cta">
+      <button id="surpriseBtn">Open Surprise</button>
+      <button id="musicBtn">Play Music</button>
+    </div>
+    <canvas id="confettiCanvas"></canvas>
+  </header>
+
+  <section class="countdown" id="countdown">
+    <h2>Countdown to your special day</h2>
+    <div class="timer">
+      <div><span id="days">00</span><label>Days</label></div>
+      <div><span id="hours">00</span><label>Hours</label></div>
+      <div><span id="minutes">00</span><label>Minutes</label></div>
+      <div><span id="seconds">00</span><label>Seconds</label></div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Memories we cherish</h2>
+    <div class="grid">
+      <img src="assets/images/mom1.jpg" alt="Mom smiling" />
+      <img src="assets/images/mom2.jpg" alt="Family moment" />
+      <img src="assets/images/mom3.jpg" alt="Celebration" />
+      <img src="assets/images/mom4.jpg" alt="Travel memory" />
+    </div>
+  </section>
+
+  <section class="wishes" id="wishes">
+    <h2>Messages for Mom</h2>
+    <form id="wishForm">
+      <input type="text" id="name" placeholder="Your name" required />
+      <textarea id="message" placeholder="Write your wish..." required></textarea>
+      <button type="submit">Send Wish</button>
+    </form>
+    <ul id="wishList"></ul>
+  </section>
+
+  <footer class="footer">
+    <p>Made with love by Rakshita 💖</p>
+  </footer>
+
+  <audio id="bgMusic" src="assets/audio/happy.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
